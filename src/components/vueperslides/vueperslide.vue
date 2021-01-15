@@ -1,6 +1,6 @@
 <template lang="pug">
 component.vueperslide(
-  :is="link ? 'a' : 'div'"
+  :is="link ? 'inertia-link' : 'div'"
   :href="link && !justDragged ? link : false"
   :class="slideClasses"
   :face="slideFace3d"
