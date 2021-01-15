@@ -31,10 +31,12 @@ component.vueperslide(
   div(v-if="conf.slideContentOutside" v-show="false")
     slot(name="content")
       .vueperslide__content-wrapper
+        .vueperslide__bgelement
         .vueperslide__title(v-if="title" v-html="title")
         .vueperslide__content(v-if="content" v-html="content")
   slot(name="content" v-else)
     .vueperslide__content-wrapper
+      .vueperslide__bgelement
       .vueperslide__title(v-if="title" v-html="title")
       .vueperslide__content(v-if="content" v-html="content")
   .vueperslide__loader(v-if="conf.lazy && !loaded")
